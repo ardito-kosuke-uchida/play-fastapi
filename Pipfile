@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+gunicorn = "*"
+psycopg2-binary = "*"
+fastapi = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+sqlalchemy = "*"
+alembic = "*"
+pydantic = {extras = ["email"], version = "*"}
+
+[dev-packages]
+python-dotenv = "*"
+ipython = "*"
+flake8 = "*"
+isort = {extras = ["pipfile_deprecated_finder"], version = "*"}
+
+[requires]
+python_version = "3.9"
